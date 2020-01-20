@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pixel_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/TextContent.Small.White"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#4D000000"
+                android:drawableLeft="@drawable/ic_collections_white_18dp"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:text="@string/dummy_photo"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent.Black"
+            android:textSize="32sp"
+            android:text="@string/price"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/remaining_stock"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/TextContent"
+            android:text="@string/content_text"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/specification"
+            android:layout_marginBottom="8dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="Display"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_display" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="Size"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="Battery"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_battery"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/seller"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo_user"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/rsz_img_7364e"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                style="@style/TextContent"
+                android:layout_toRightOf="@id/photo_user"
+                android:layout_toEndOf="@id/photo_user"
+                android:text="@string/saller_name"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+        <Button
+            style="@style/ButtonGeneral"
+            android:text="@string/buy"/>
+
+    </LinearLayout>
+
+</ScrollView>
